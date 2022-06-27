@@ -16,11 +16,26 @@ const getPost = async (userId, index) => {
     const postsRes = await fetchPosts(userId);
     const { items } = postsRes?.data;
 
-    if (!items || !items[index || 0]) {
+    const _index = index || 0;
+    if (!items || !items[_index]) {
       throw new Error("No post matched");
     }
 
-    return items[index || 0];
+    const thumbnail = items[_index]?.thumbnail;
+
+    if (thumbnail) {
+      const { data: thumbnailRaw } = await axios.get(thumbnail, {
+        responseType: "arraybuffer",
+      });
+
+      const base64Img = Buffer.from(thumbnailRaw).toString("base64");
+      const imgTypeArr = thumbnail.split(".");
+      const imgType = imgTypeArr[imgTypeArr.length - 1];
+      const convertedThumbnail = `data:image/${imgType};base64,${base64Img}`;
+      items[_index].thumbnail = convertedThumbnail;
+    }
+
+    return items[_index];
   } catch (err) {
     const message = err?.response?.data?.message;
 
@@ -29,7 +44,7 @@ const getPost = async (userId, index) => {
     }
 
     throw new Error(
-      `Fetch to post error from userId: ${userId}, index: ${index || 0}`,
+      `Fetch to post error from userId: ${userId}, index: ${index}`,
     );
   }
 };

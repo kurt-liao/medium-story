@@ -4,7 +4,7 @@ require("dotenv").config();
 
 module.exports = async (req, res) => {
   const { user_id, index } = req.query;
-  console.log(user_id, index);
+
   res.setHeader("Cache-Control", "public max-age=3600");
   res.setHeader("Content-Type", "image/svg+xml");
 
@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
       user_id,
       index,
     );
-    console.log(description);
+
     return res.send(
       card({
         title,
