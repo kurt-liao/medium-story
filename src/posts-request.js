@@ -22,7 +22,6 @@ const getPost = async (userId, index) => {
     }
 
     const thumbnail = items[_index]?.thumbnail;
-
     if (thumbnail) {
       const { data: thumbnailRaw } = await axios.get(thumbnail, {
         responseType: "arraybuffer",
