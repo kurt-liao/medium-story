@@ -1,4 +1,5 @@
 const axios = require("axios");
+const moment = require("moment");
 
 const fetchPosts = (userId) => {
   return axios({
@@ -33,6 +34,8 @@ const getPost = async (userId, index) => {
       const convertedThumbnail = `data:image/${imgType};base64,${base64Img}`;
       items[_index].thumbnail = convertedThumbnail;
     }
+
+    items[_index].pubDate = moment(items[_index.pubDate]).format("YYYY-MM-DD");
 
     return items[_index];
   } catch (err) {
