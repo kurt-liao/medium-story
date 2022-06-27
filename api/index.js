@@ -3,12 +3,7 @@ import card from "../src/card";
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user_id, index } = req.query;
-  const { headers } = req;
-
-  const dest = headers["sec-fetch-dest"] || headers["Sec-Fetch-Dest"];
-  const accept = headers["accept"];
-  const isImage = dest ? dest === "image" : !/text\/html/.test(accept);
+  const { user_id, index, is_url } = req.query;
 
   try {
     const { title, pubDate, guid, thumbnail, description } = await getPost(
@@ -16,7 +11,7 @@ module.exports = async (req, res) => {
       index,
     );
 
-    if (isImage) {
+    if (!is_url) {
       res.setHeader("Cache-Control", "public max-age=3600");
       res.setHeader("Content-Type", "image/svg+xml");
 
