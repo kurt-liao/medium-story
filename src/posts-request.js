@@ -28,14 +28,14 @@ const getPost = async (userId, index) => {
         responseType: "arraybuffer",
       });
 
-      const base64Img = Buffer.from(thumbnailRaw).toString("base64");
+      const base64 = Buffer.from(thumbnailRaw).toString("base64");
       const imgTypeArr = thumbnail.split(".");
       const imgType = imgTypeArr[imgTypeArr.length - 1];
-      const convertedThumbnail = `data:image/${imgType};base64,${base64Img}`;
-      items[_index].thumbnail = convertedThumbnail;
+      const base64Img = `data:image/${imgType};base64,${base64}`;
+      items[_index].thumbnail = base64Img;
     }
 
-    items[_index].pubDate = moment(items[_index.pubDate]).format("YYYY-MM-DD");
+    items[_index].pubDate = moment(items[_index].pubDate).format("YYYY-MM-DD");
 
     return items[_index];
   } catch (err) {

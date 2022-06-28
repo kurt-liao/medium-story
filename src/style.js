@@ -10,7 +10,12 @@ export const style = `<style>
     align-items:center;
 }
 
+.wrapper {
+    height: 200px;
+}
+
 .container{
+    height: 100%;
     border: 1px solid rgba(0,0,0,.2);
     padding: 10px 20px;
     background: rgb(255,255,255);
@@ -18,6 +23,21 @@ export const style = `<style>
     box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-shadow: -1px -1px white, 1px 1px #333;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .title-wrapper {
@@ -28,7 +48,6 @@ export const style = `<style>
 
 img {
     width: 200px;
-    height: 100%;
     object-fit: cover;
 }
 a{
@@ -60,14 +79,16 @@ h3{
 
 .categories-wrapper {
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .category {
     background: #f3f6f4;
-    padding: 0.2rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 5px;
     color: #7E7D7B;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: rgb(0 0 0 / 25%) 0px 6px 3px;
 }
 
 .category:not(:last-child) {

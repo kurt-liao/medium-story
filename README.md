@@ -2,7 +2,7 @@
 
 ## Demo
 
-<img height="180" src="https://medium-post-seven.vercel.app/api?user_id=@s09001" />
+<img height="200" src="https://medium-post-seven.vercel.app/api?user_id=@s09001" />
 
 Also you can see an example in my
 [Readme](https://github.com/kurt-liao/kurt-liao)
@@ -30,7 +30,7 @@ Also you can see an example in my
 
   ![](/img/rss-result.png)
 
-- Items are your posts, index 0 means the first post. etc.
+- Items array is your posts, index 0 means the first post. etc.
 
 ## Optional Settings
 

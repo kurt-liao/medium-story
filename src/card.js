@@ -8,10 +8,9 @@ const card = ({
   thumbnail,
   categories = [],
 }) => {
-  return `<svg fill="none" width="600" height="180" xmlns="http://www.w3.org/2000/svg">
+  return `<svg fill="none" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
-            
+		<div xmlns="http://www.w3.org/1999/xhtml"> 
 			${style}
             <div class="wrapper flex">
                 <a class="container flex" href="${url}" target="__blank">
@@ -35,7 +34,8 @@ const card = ({
                             : ""
                         }
                     </div>
-                    <img src="${thumbnail}"/>
+                    ${thumbnail ? `<img src="${thumbnail}" />` : ""}
+                    <div class="overlay"></div>
                 </a>
             </div>
         </div>
