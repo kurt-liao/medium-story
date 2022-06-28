@@ -15,6 +15,7 @@ export const style = `<style>
 }
 
 .container{
+    position: relative;
     height: 100%;
     border: 1px solid rgba(0,0,0,.2);
     padding: 10px 20px;

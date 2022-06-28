@@ -14,8 +14,8 @@ Also you can see an example in my
 
   `https://medium-post-seven.vercel.app/api?user_id=[your-medium-user-id]`
 
-- Pass a post's index that you want to show in querys, default is 0. Your url
-  will look like ↓
+- Pass a post's index that you want to show in querys. Your url
+  will look like ↓ (default is 0)
 
   `https://medium-post-seven.vercel.app/api?user_id=[your-user-id]&index=[index-of-your-post]`
 
@@ -34,14 +34,24 @@ Also you can see an example in my
 
 ## Optional Settings
 
-- Get Post Url - Put is_url in url querys
+- Get Post Url - Put *is_link* in url querys
 
   ```
-  https://medium-post-seven.vercel.app/api?user_id=[your-user-id]&index=[index-of-your-post]&is_url=true
+  https://medium-post-seven.vercel.app/api?user_id=[your-user-id]&index=[index-of-your-post]&is_link=true
 
-  #default is false
+  # default is false
+  ```
+- Hide Information - Put *hide* in url querys
+
+  ```
+  https://medium-post-seven.vercel.app/api?user_id=[your-user-id]&index=[index-of-your-post]&hide=date,img
+
+  # There are four hidden options - [date, img, desc, category], use comma as delimeter 
   ```
 
+  Sample  ↓
+
+  <img height="200" src="https://medium-post-seven.vercel.app/api?user_id=@s09001&hide=date,category" />
 ---
 
 ## Give some Feedback via [Issue](https://github.com/kurt-liao/medium-post/issues) or [PR](https://github.com/kurt-liao/medium-post/pulls)

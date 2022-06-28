@@ -3,13 +3,16 @@ import card from "../src/card";
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user_id, index, is_url } = req.query;
+  const { user_id, index, is_link, hide = "" } = req.query;
 
   try {
     const { title, pubDate, guid, thumbnail, description, categories } =
       await getPost(user_id, index);
 
-    if (!is_url) {
+    const _hide = hide.replace(/\s/g, "");
+    const hideArr = _hide.split(",");
+
+    if (!is_link) {
       res.setHeader("Cache-Control", "public max-age=3600");
       res.setHeader("Content-Type", "image/svg+xml");
 
@@ -23,6 +26,7 @@ module.exports = async (req, res) => {
             .replace(/<\/?[^>]+(>|$)/g, "")
             .substring(0, 200),
           categories,
+          hide: hideArr,
         }),
       );
     }
