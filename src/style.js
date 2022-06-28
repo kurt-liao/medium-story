@@ -9,15 +9,18 @@ export const style = `<style>
     display: flex;
     align-items:center;
 }
+
+.wrapper {
+    height: 100%;
+}
+
 .container{
-    height: 120px;
+    height: inherit;
     border: 1px solid rgba(0,0,0,.2);
     padding: 10px 20px;
-    border-radius: 10px;
     background: rgb(255,255,255);
-    background: linear-gradient(60deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(246,246,246,1) 50%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 100%);
     background-size: 600% 400%;
-    animation: gradientBackground 3s ease infinite;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -29,8 +32,7 @@ export const style = `<style>
 }
 
 img {
-    margin-right: 10px;
-    width: 170px;
+    width: 200px;
     height: 100%;
     object-fit: cover;
 }
@@ -47,9 +49,12 @@ p {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
 h3{
-    color: #333
+    color: #333;
+    font-size: 1.2rem;
 }
+
 .date{
     color: #888;
     display: block;
@@ -57,4 +62,21 @@ h3{
     margin-bottom: 8px;
     font-size: 14px;
 }
+
+.categories-wrapper {
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.category {
+    background: #f3f6f4;
+    padding: 0.2rem;
+    border-radius: 5px;
+    color: #7E7D7B;
+}
+
+.category:not(:last-child) {
+    margin-right: 5px;
+}
+
 </style>`;

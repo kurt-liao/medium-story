@@ -6,10 +6,8 @@ module.exports = async (req, res) => {
   const { user_id, index, is_url } = req.query;
 
   try {
-    const { title, pubDate, guid, thumbnail, description } = await getPost(
-      user_id,
-      index,
-    );
+    const { title, pubDate, guid, thumbnail, description, categories } =
+      await getPost(user_id, index);
 
     if (!is_url) {
       res.setHeader("Cache-Control", "public max-age=3600");
@@ -24,6 +22,7 @@ module.exports = async (req, res) => {
           description: description
             .replace(/<\/?[^>]+(>|$)/g, "")
             .substring(0, 200),
+          categories,
         }),
       );
     }
