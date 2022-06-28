@@ -8,7 +8,7 @@ const card = ({
   thumbnail,
   categories = [],
 }) => {
-  return `<svg fill="none" width="600" height="250" xmlns="http://www.w3.org/2000/svg">
+  return `<svg fill="none" width="600" height="180" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
             

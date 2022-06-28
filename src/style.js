@@ -10,12 +10,7 @@ export const style = `<style>
     align-items:center;
 }
 
-.wrapper {
-    height: 100%;
-}
-
 .container{
-    height: inherit;
     border: 1px solid rgba(0,0,0,.2);
     padding: 10px 20px;
     background: rgb(255,255,255);
