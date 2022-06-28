@@ -3,11 +3,11 @@ import card from "../src/card";
 require("dotenv").config();
 
 module.exports = async (req, res) => {
-  const { user_id, index, is_link, hide = "" } = req.query;
+  const { username, index, is_link, hide = "" } = req.query;
 
   try {
     const { title, pubDate, guid, thumbnail, description, categories } =
-      await getPost(user_id, index);
+      await getPost(username, index);
 
     const _hide = hide.replace(/\s/g, "");
     const hideArr = _hide.split(",");

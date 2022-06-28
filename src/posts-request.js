@@ -1,20 +1,20 @@
 const axios = require("axios");
 const moment = require("moment");
 
-const fetchPosts = (userId) => {
+const fetchPosts = (username) => {
   return axios({
-    url: `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${userId}`,
+    url: `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${username}`,
     method: "get",
   });
 };
 
-const getPost = async (userId, index) => {
-  if (!userId) {
-    throw new Error("Missing param userId.");
+const getPost = async (username, index) => {
+  if (!username) {
+    throw new Error("Missing param username.");
   }
 
   try {
-    const postsRes = await fetchPosts(userId);
+    const postsRes = await fetchPosts(username);
     const { items } = postsRes?.data;
 
     const _index = index || 0;
@@ -46,7 +46,7 @@ const getPost = async (userId, index) => {
     }
 
     throw new Error(
-      `Fetch to post error from userId: ${userId}, index: ${index}`,
+      `Fetch to post error from username: ${username}, index: ${index}`,
     );
   }
 };
