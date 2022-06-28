@@ -15,7 +15,6 @@ export const style = `<style>
 }
 
 .container{
-    position: relative;
     height: 100%;
     border: 1px solid rgba(0,0,0,.2);
     padding: 10px 20px;
@@ -25,20 +24,6 @@ export const style = `<style>
     overflow: hidden;
     text-overflow: ellipsis;
     text-shadow: -1px -1px white, 1px 1px #333;
-}
-
-.container:hover .overlay {
-    opacity: 1;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, .2);
 }
 
 .title-wrapper {

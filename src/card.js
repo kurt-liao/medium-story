@@ -46,7 +46,6 @@ const card = ({
                         ? `<img src="${thumbnail}" />`
                         : ""
                     }
-                    <div class="overlay"></div>
                 </a>
             </div>
         </div>
