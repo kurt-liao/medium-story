@@ -24,7 +24,7 @@ Also you can see an example in my
 - It's rss feed that I use to receive recent posts, you can paste it on browser
   and get yours.
 
-  `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/$[your-medium-user-id]`
+  `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/[your-medium-user-id]`
 
 - Result will look like ↓
 
