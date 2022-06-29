@@ -1,59 +1,52 @@
-# Medium Post
+</br>
 
-## Demo
+<div align="center">
+  <img src="./assets/image/MediumPost.png" alt="Medium Post" height="50"/>
+  <h1 hidden>Medium Post</h1>
 
-<img height="200" src="https://medium-post-seven.vercel.app/api?username=@s09001" />
-
-Also you can see an example in my
-[Readme](https://github.com/kurt-liao/kurt-liao)
-
-## How to use
-
-- Find your Medium username
-- Replace username
-
-  `https://medium-post-seven.vercel.app/api?username=[your-medium-username]`
-
-- Pass a post's index that you want to show in querys. Your url
-  will look like ↓ (default is 0)
-
-  `https://medium-post-seven.vercel.app/api?username=[your-medium-username]&index=[index-of-your-post]`
-
-## Get recent post by rss
-
-- It's rss feed that I use to receive recent posts, you can paste it on browser
-  and get yours.
-
-  `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/$[your-medium-username]`
-
-- Result will look like ↓
-
-  ![](/img/rss-result.png)
-
-- Items array is your posts, index 0 means the first post. etc.
-
-## Optional Settings
-
-- Get Post Url - Put *is_link* in url querys
-
-  ```
-  https://medium-post-seven.vercel.app/api?username=[your-username]&index=[index-of-your-post]&is_link=true
-
-  # default is false
-  ```
-- Hide Information - Put *hide* in url querys
-
-  ```
-  https://medium-post-seven.vercel.app/api?username=[your-username]&index=[index-of-your-post]&hide=date,img
-
-  # There are four hidden options - [date, img, desc, category], use comma as delimeter 
-  ```
-
-  Sample  ↓
-
-  <img height="200" src="https://medium-post-seven.vercel.app/api?username=@s09001&hide=date,category" />
 ---
 
-## Give some Feedback via [Issue](https://github.com/kurt-liao/medium-post/issues) or [PR](https://github.com/kurt-liao/medium-post/pulls)
+  <p>Get recent medium posts on your README profile</p>
+</div>
 
-## Don't forget the ⭐
+<p align="center">
+  <a href="https://github.com/kurt-liao/medium-post/issues">Report Bug</a>
+  .
+  <a href="https://github.com/kurt-liao/medium-post/pulls">New Feature</a>
+</p>
+
+# Medium Post Card
+
+Easy to use. 🅲🆃🆁🅻-🅲 + 🅲🆃🆁🅻-🆅 into your readme markdown.
+
+Change the `?username=` value to your Medium's username.
+
+```md
+[![My Medium Posts](https://medium-post-seven.vercel.app/api?username=@s09001&index=0)](https://medium-post-seven.vercel.app/api?username=@s09001&index=0&is_link=true)
+```
+
+[![My Medium Posts](https://medium-post-seven.vercel.app/api?username=@s09001&index=0)](https://medium-post-seven.vercel.app/api?username=@s09001&index=0&is_link=true)
+
+or
+
+```html
+<a
+  href="https://medium-post-seven.vercel.app/api?username=@s09001&index=0&is_link=true"
+>
+  <img
+    height="200"
+    src="https://medium-post-seven.vercel.app/api?username=@s09001&index=0"
+  />
+</a>
+```
+
+<a href="https://medium-post-seven.vercel.app/api?username=@s09001&index=0&is_link=true">
+  <img height="200" src="https://medium-post-seven.vercel.app/api?username=@s09001&index=0" />
+</a>
+
+Note: This project use rss to get medium user's recent post
+
+The `index` param let you to choose which post you want to get, 0 means the
+latest post, etc.
+
+Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
