@@ -1,11 +1,7 @@
 </br>
 
 <div align="center">
-  <img src="./assets/image/MediumPost.png" alt="Medium Post" height="50"/>
-  <h1 hidden>Medium Post</h1>
-
----
-
+  <h1><img src="./assets/image/MediumPost.png" alt="Medium Post" height="50"/></h1>
   <p>Get recent medium posts on your README profile</p>
 </div>
 
