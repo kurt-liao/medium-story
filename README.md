@@ -68,4 +68,4 @@ https://medium-story.vercel.app/api?username=@s09001&index=0&is_link=true
 
 ---
 
-<h3>Contributions welcome! Don't forget ⭐</h3>
+<h3>Contributions welcome! Also ⭐ </h3>
