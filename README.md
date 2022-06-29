@@ -13,7 +13,7 @@
 
 # Medium Story Card
 
-Easy to use. 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme markdown.
+Easy to use! 🅲🆃🆁🅻+🅲 & 🅲🆃🆁🅻+🆅 into your readme markdown.
 
 Change the `?username=` value to your Medium's username.
 
@@ -69,3 +69,18 @@ https://medium-story.vercel.app/api?username=@s09001&index=0&is_link=true
 ---
 
 <h3>Contributions welcome! Also ⭐ </h3>
+
+## Deploy your own 🚀
+
+<details>
+  <summary> <strong>Guide</strong> </summary>
+
+- Fork this repo
+- Sign up and log in into [Vercel](https://vercel.com/)
+- Go to Vercel [dashboard](https://vercel.com/dashboard)
+- Click `Import Project`
+- Click `Import Git Respository`
+- Click `delpoy`, and done. Find out your domain and start to use it!
+</details>
+
+<a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkurt-liao%2Fmedium-story"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
