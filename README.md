@@ -79,9 +79,14 @@ https://medium-story.vercel.app/api?username=@s09001&index=0&is_link=true
 - Fork this repo
 - Sign up and log in into [Vercel](https://vercel.com/)
 - Go to Vercel [dashboard](https://vercel.com/dashboard)
-- Click `Import Project`
-- Click `Import Git Respository`
+- Click `New Project`
+- Click `Import Git Respository`(Of course you need to authorize the repo first,
+  then you can see the repo in the list)
+  ![2022-06-30_10-28](https://user-images.githubusercontent.com/32745146/176579816-2a28f1d5-2fd2-4218-8367-01a53dfcc09a.png)
+
 - Click `delpoy`, and done. Find out your domain and start to use it!
+- Add following command to prevent deploying on irrelevant changes.
+![2022-06-30_10-17](https://user-images.githubusercontent.com/32745146/176579415-23ac711e-c695-4bad-aa85-1faf4ef67c67.png)
 </details>
 
 <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkurt-liao%2Fmedium-story"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
