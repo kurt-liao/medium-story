@@ -82,6 +82,7 @@ https://medium-story.vercel.app/api?username=@s09001&index=0&is_link=true
 - Click `New Project`
 - Click `Import Git Respository`(Of course you need to authorize the repo first,
   then you can see the repo in the list)
+  
   ![2022-06-30_10-28](https://user-images.githubusercontent.com/32745146/176579816-2a28f1d5-2fd2-4218-8367-01a53dfcc09a.png)
 
 - Click `delpoy`, and done. Find out your domain and start to use it!
