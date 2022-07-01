@@ -4,6 +4,7 @@
   <h1><img src="./assets/image/MediumStory.png" alt="Medium Story" height="50"/></h1>
   <p>Get recent medium stories on your README profile</p>
   
+  <img src="https://hits.dwyl.com/kurt-liao/medium-story.svg?style=flat" />
   <img src="https://img.shields.io/github/deployments/kurt-liao/medium-story/production?label=vercel&logo=vercel" />
   <img src="https://img.shields.io/badge/license-MIT-blue" />
   <img src="https://img.shields.io/badge/license-BEERWARE%20%F0%9F%8D%BA-yellowgreen" />
