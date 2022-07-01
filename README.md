@@ -49,7 +49,7 @@ or
 _Note: This project use rss to get your newest 10 stories. The `index` param let
 you to choose which story you want to get, 0 means the latest story, etc._
 
-Also you can see an example [here](https://github.com/kurt-liao/kurt-liao)
+You can see an example **[here](https://github.com/kurt-liao/kurt-liao)** as well.
 
 ### Hide specific info
 
