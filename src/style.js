@@ -5,32 +5,6 @@ export const style = `<style>
     box-sizing: border-box;
     font-family: sans-serif
 }
-.flex {
-    display: flex;
-    align-items:center;
-}
-
-.wrapper {
-    height: 200px;
-}
-
-.container{
-    height: 100%;
-    border: 1px solid rgba(0,0,0,.2);
-    padding: 10px 20px;
-    background: rgb(255,255,255);
-    background-size: 600% 400%;
-    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-shadow: -1px -1px white, 1px 1px #333;
-}
-
-.title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
-}
 
 img {
     width: 200px;
@@ -55,6 +29,29 @@ h3{
     font-size: 1.2rem;
 }
 
+.flex {
+    display: flex;
+    align-items:center;
+}
+
+.container{
+    height: 100%;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 10px 20px;
+    background: rgb(255,255,255);
+    background-size: 600% 400%;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: -1px -1px white, 1px 1px #333;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
 .date{
     color: #888;
     display: block;
@@ -65,7 +62,7 @@ h3{
 
 .categories-wrapper {
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin: 10px 0 6px 0;
 }
 
 .category {
@@ -75,6 +72,7 @@ h3{
     color: #7E7D7B;
     border: 1px solid rgba(0,0,0,.2);
     box-shadow: rgb(0 0 0 / 25%) 0px 6px 3px;
+    margin-bottom: 6px;
 }
 
 .category:not(:last-child) {

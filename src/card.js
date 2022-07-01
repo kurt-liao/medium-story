@@ -14,7 +14,7 @@ const card = ({
   const isHideImg = hide.includes("img");
   const isHideDesc = hide.includes("desc");
 
-  return `<svg fill="none" width="600" height="200" xmlns="http://www.w3.org/2000/svg">
+  return `<svg fill="none" width="600" height="250" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml"> 
 			${style}
